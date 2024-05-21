@@ -1,0 +1,103 @@
+/* Define the primary colors */
+:root {
+    --primary-color: #000000;   /* Blue */
+    --secondary-color: #fdfdfd; /* Red */
+    --accent-color1: #ffffff;   /* Green */
+    --accent-color2: #000000;   /* Yellow */
+}
+
+.thumbnail-image {
+    width: 30px;
+    height: 30px;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-picture-wrapper {
+    position: relative;
+    display: inline-block; /* Ensure the wrapper only takes the space of the image */
+}
+
+.profile-picture {
+    animation: pulse 2s infinite alternate; /* Apply the pulse animation */
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1); /* Initial scale */
+    }
+    to {
+        transform: scale(1.2); /* Scale up */
+    }
+}
+#p5-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.content-wrapper {
+    position: relative;
+    z-index: 1;
+    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+}
+
+.list-group-item {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    background-color: #fff;
+    border: 2px solid var(--primary-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.list-group-item:hover {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+img.rounded-circle {
+    width: 150px;
+    height: 150px;
+    border: 4px solid var(--accent-color1);
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 767.98px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .list-group-item {
+        font-size: 1rem;
+        padding: 0.75rem 1rem;
+    }
+
+    img.rounded-circle {
+        width: 100px;
+        height: 100px;
+        border-width: 2px;
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linktree Page</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        #p5-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        #p5-foreground {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="p5-background"></div>
+    <div id="p5-foreground"></div>
+    <div class="content-wrapper text-center mt-5">
+        <img src="/heart.png" class="rounded-circle mb-4 profile-picture" alt="Profile Picture">
+        <h1 class="mb-4">Mozey River</h1>
+        <div class="list-group">
+            <a href="https://example.com/link1" class="list-group-item list-group-item-action"> <img class = "thumbnail-image" src="instagram.png" alt="Instagram"> </a>
+            <a href="https://example.com/link2" class=" list-group-item list-group-item-action"> <img class = "thumbnail-image" src="twitch.png" alt="twitch"> </a>
+            <a href="https://example.com/link3" class=" list-group-item list-group-item-action"> <img class = "thumbnail-image" src="spotify.png" alt="spotify"> </a>
+            <a href="https://example.com/link4" class=" list-group-item list-group-item-action"> <img class = "thumbnail-image" src="soundcloud.png" alt="soundcloud"> </a>
+        </div>
+
+        <div class="audio-player">
+            <h3 id="current-track"></h3>
+            <div>
+                <button onclick="previousSong()">Previous</button>
+                <button onclick="playPause()">Play/Pause</button>
+                <button onclick="skipSong()">Skip</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="js/p5background.js"></script>
+    <script src="js/p5foreground.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
