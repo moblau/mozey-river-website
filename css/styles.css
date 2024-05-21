@@ -5,41 +5,12 @@
     --accent-color1: #ffffff;   /* Green */
     --accent-color2: #000000;   /* Yellow */
 }
-.play{
-    background-color: rgba(40, 230, 30, 0.8);
-}
-
-
-
-.skip  {
-    background-color: rgba(73, 40, 222, 0.8);
-    border: none;
-    padding: 0;
-}
-
-
-
-.glow {
-    animation: glow 1s ease-in-out infinite alternate;
-}
-
-@keyframes glow {
-    0% {
-        box-shadow: 0 0 10px #a29334, 0 0 20px #00c6ff, 0 0 30px #9ac02b;
-    }
-    100% {
-        box-shadow: 0 0 20px #00c6ff, 0 0 40px #ec0000, 0 0 60px #00c6ff;
-    }
-}
-
 
 .thumbnail-image {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
-.container {
-    margin-bottom: 50px;
-}
+
 body {
     background-color: var(--primary-color);
     color: #fff;

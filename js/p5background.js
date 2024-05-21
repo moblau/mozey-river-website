@@ -63,7 +63,7 @@ class SolarSystem {
         
         // Update planets
         for (let planet of this.planets) {
-            planet.update(this.x,this.y);
+            planet.update();
         }
     }
     
@@ -93,14 +93,14 @@ class Planet {
         this.color2 = color(random(255), random(255), random(255));
     }
     
-    update(x,y) {
+    update() {
         this.angle += this.speed * 0.01;
         
         // Add current position to trail
-        this.trail.push({ x: this.calculateX(x), y: this.calculateY(y) });
+        this.trail.push({ x: this.calculateX(), y: this.calculateY() });
         
         // Limit trail length
-        if (this.trail.length > 200) {
+        if (this.trail.length > 20) {
             this.trail.shift(); // Remove oldest point
         }
     }
