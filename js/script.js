@@ -23,9 +23,14 @@ var currentTrack = document.getElementById("current-track");
 var isPlaying = false;
 var currentIndex = -1;
 var history = [];
-
+var started = false;
 
 function playPause() {
+    if (!started){
+        var nextSongIndex = Math.floor(Math.random() * songs.length);
+        audio.src = songs[nextSongIndex];
+        currentTrack.innerText = "Now Playing: " + songs[nextSongIndex];
+    }
     if (isPlaying) {
         audio.pause();
         isPlaying = false;
