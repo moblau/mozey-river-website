@@ -11,18 +11,20 @@
 // });
 
 var songs = [
-    "Better Weather.wav",
-    "Carousel.wav",
-    "Dolby's Resistance.wav",
-    "Happy in a sea of doubt.wav",
-    "Hinges.wav",
-    "I know how you really feel.wav",
-    "Why not just let it all go.wav",
-    "Take me to the moon.wav",
-    "Somewhere, sometimes.wav",
-    "Takeoff.wav",
-    "What Else.wav",
-    "Tomorrow.wav",
+    "Better Weather.mp3",
+    "Carousel.mp3",
+    "Dolby's Resistance.mp3",
+    "Happy in a sea of doubt.mp3",
+    "Hinges.mp3",
+    "I know how you really feel.mp3",
+    "Why not just let it all go.mp3",
+    "Take me to the moon.mp3",
+    "Somewhere, sometimes.mp3",
+    "Takeoff.mp3",
+    "What Else.mp3",
+    "Tomorrow.mp3",
+    "VIOLET LEAVES.mp3",
+    "The Swings in 2023.mp3"
 ];
 
 var audio = new Audio(); 
