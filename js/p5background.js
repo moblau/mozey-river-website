@@ -5,7 +5,7 @@ function setup() {
     canvas.parent('p5-background');
     
     // Create multiple solar systems
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 5; i++) {
         systems.push(new SolarSystem(random(width), random(height)));
     }
 }
@@ -21,7 +21,7 @@ function draw() {
 
 function drawStarrySky() {
     // Dark sky background
-    background(0);
+    background(0,0,40);
     
     // Draw glowing stars in the distance
     for (let i = 0; i < 200; i++) {

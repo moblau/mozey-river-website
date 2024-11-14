@@ -11,11 +11,18 @@
 // });
 
 var songs = [
-    "airwaves.wav",
-    "caterpillar.wav",
-    "nosoap.wav",
-    "santa.wav",
-    "outro.wav"
+    "Better Weather.wav",
+    "Carousel.wav",
+    "Dolby's Resistance.wav",
+    "Happy in a sea of doubt.wav",
+    "Hinges.wav",
+    "I know how you really feel.wav",
+    "Why not just let it all go.wav",
+    "Take me to the moon.wav",
+    "Somewhere, sometimes.wav",
+    "Takeoff.wav",
+    "What Else.wav",
+    "Tomorrow.wav",
 ];
 
 var audio = new Audio(); 
