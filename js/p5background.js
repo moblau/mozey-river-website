@@ -5,7 +5,7 @@ function setup() {
     canvas.parent('p5-background');
     
     // Create multiple solar systems
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 1; i++) {
         systems.push(new SolarSystem(random(width), random(height)));
     }
 }
