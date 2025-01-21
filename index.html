@@ -30,28 +30,31 @@
 <body style="overflow-y: auto; height: 100vh;" >
     <div id="p5-background"></div>
     <div id="p5-foreground"></div>
-    <div class="m-3 p-5 content-wrapper text-center mt-5">
-        <img src="heart.png" class="rounded-circle mb-4 profile-picture" alt="Profile Picture">
+    <div class="m-4 p-2 content-wrapper text-center mt-5">
+        
+        <img src="heart.png" class="mt-5 rounded-circle mb-4 profile-picture" alt="Profile Picture">
         <br>
         <!-- <img class = "logo glow " src="logo.png" alt="Instagram"> -->
-         <h1 class="m-5"> Mozey River </h1>
+         <h1 class="m-4"> Mozey River </h1>
 
-        <div class="container">
+        <div class="container p-4">
             <div class="row">
                 <div class=" col-4 col-md-4 ">
                     <a href="https://music.apple.com/us/artist/mozey-river/1489387620">
                         <img class = "rounded-lg bg-white thumbnail-image" src="apple.png" alt="AppleMusic">
+                        <p class ="dl">Apple Music</p>
                     </a>
                 </div>
                 <div class="col-4 col-md-4">
                     <a href="https://open.spotify.com/artist/0uDOl3T70jxoS8bSubtRnf?si=MIF7TVMoQHmisr6Y_kNBFg">
                         <img class = "thumbnail-image" src="spotify.png" alt="spotify">
+                        <p class ="dl">Spotify</p>
                     </a>
                 </div>
 
-                <div class="col-4 col-md-4">
+                <div class=" col-4 col-md-4">
                     <a href="https://github.com/moblau">
-                        <img class = "rounded-lg bg-white  thumbnail-image" src="github.png" alt="twitch">
+                        <img class = "rounded-lg bg-white  thumbnail-image" src="github.png" alt="github">
                         <p class ="dl">See my code</p>
                     </a>
                 </div>
@@ -59,46 +62,52 @@
                 <div class="mt-5 col-4 col-md-4">
                     <a href="https://www.instagram.com/mozeyriver">
                         <img class = "thumbnail-image" src="instagram.png" alt="Instagram">
+                        <p class ="dl">Instagram</p>
                     </a>
                 </div>
                 <div class="mt-5 col-4 col-md-4">
                     <a href="https://www.linkedin.com/in/morrisblaustein/">
-                        <img class = "thumbnail-image" src="linkedin.png" alt="YouTube">
+                        <img class = "thumbnail-image" src="linkedin.png" alt="LinkedIn">
+                        <p class ="dl">LinkedIn</p>
                     </a>
                 </div>
-                <div class="mt-5  col-4 col-md-4">
+                <div class="d-flex  justify-content-center mt-5  col-4 col-md-4">
                     <a href="\luluby.html">
                         <img class = "thumbnail-image" src="luluby.png" alt="YouTube">
                         <p class ="dl">Download Tourniquet</p>
                     </a>
                 </div>
             </div>
+            <div class="audio-player p-1 m-3">
+                <h3 id="current-track"></h3>
+                <div>
+                    <button class ="player-icon skip" onclick="previousSong()"><img class = "thumbnail-image " src="previous.png" alt="soundcloud"></button>
+                    <button class ="player-icon play" onclick="playPause()"><img class = "thumbnail-image " src="play.png" alt="soundcloud"></button>
+                    <button class ="player-icon skip" onclick="skipSong()"><img class = "thumbnail-image " src="next.png" alt="soundcloud"></button>
+                </div>
+            </div> 
             <div class="mt-4 container">
                 <form action="https://formspree.io/f/movvgyza" method="POST" class="p-1  rounded shadow-sm">
-                  <h3 class="message">Leave a message for me:</h3>
+                  <h3 class="message dl">Leave a message:</h3>
                   <div class="mb-3">
-                    <textarea id="message" name="message" rows="4" class="form-control" required></textarea>
+                    <textarea id="message" name="message" rows="4" class="form-control text_area" required></textarea>
                   </div>
-                  <button type="submit" class="btn btn-warning w-50 px-5">Send</button>
+                  <h3 class="message dl">From:</h3>
+                  <div class="mb-3">
+                    <textarea id="from" name="from" rows="1" class="form-control text_area" required></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-warning w-50 px-5 btn m-3">Send</button>
                 </form>
               </div>
         </div>
 
 
-        <!-- <div class="" m-5 p-5 audio-player">
-            <h3 id="current-track"></h3>
-            <div>
-                <button class ="player-icon skip" onclick="previousSong()"><img class = "thumbnail-image " src="previous.png" alt="soundcloud"></button>
-                <button class ="player-icon play glow" onclick="playPause()"><img class = "thumbnail-image " src="play.png" alt="soundcloud"></button>
-                <button class ="player-icon skip" onclick="skipSong()"><img class = "thumbnail-image " src="next.png" alt="soundcloud"></button>
-            </div>
-        </div> -->
+        
         
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <script src="js/p5background.js"></script>
-    <script src="js/p5foreground.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

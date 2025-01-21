@@ -33,12 +33,14 @@ var isPlaying = false;
 var currentIndex = -1;
 var history = [];
 var started = false;
+var playButton = document.querySelector('.play');
 
 function playPause() {
     if (!started){
         var nextSongIndex = Math.floor(Math.random() * songs.length);
-        audio.src = songs[nextSongIndex];
+        audio.src = "music/" +songs[nextSongIndex];
         currentTrack.innerText = "Now Playing: " + songs[nextSongIndex];
+        started = true;
     }
     if (isPlaying) {
         audio.pause();
@@ -47,11 +49,12 @@ function playPause() {
         audio.play();
         isPlaying = true;
     }
+
 }
 
 function skipSong() {
     var nextSongIndex = Math.floor(Math.random() * songs.length);
-    audio.src = songs[nextSongIndex];
+    audio.src = "music/" + songs[nextSongIndex];
     currentTrack.innerText = "Now Playing: " + songs[nextSongIndex];
     audio.play();
     isPlaying = true;
@@ -65,7 +68,7 @@ function addToHistory(index) {
 function previousSong() {
     if (currentIndex > 0) {
         currentIndex--;
-        audio.src = songs[history[currentIndex]];
+        audio.src = "music/" + songs[history[currentIndex]];
         currentTrack.innerText = "Now Playing: " + songs[history[currentIndex]];
         audio.play();
         isPlaying = true;
@@ -74,10 +77,14 @@ function previousSong() {
 
 audio.onplay = function() {
     isPlaying = true;
+    playButton.classList.add('glow');
+
 };
 
 audio.onpause = function() {
     isPlaying = false;
+    playButton.classList.remove('glow');
+
 };
 
 audio.onended = function() {
