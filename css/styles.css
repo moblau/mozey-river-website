@@ -146,3 +146,10 @@ img.rounded-circle {
     margin-top: 50px;
     width:200px;
 }
+.dl{
+    color: lightcyan;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.message{
+    font-size: 20px;
+}
