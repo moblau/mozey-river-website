@@ -24,11 +24,11 @@ function drawStarrySky() {
     background(0,0,40);
     
     // Draw glowing stars in the distance
-    for (let i = 0; i < 200; i++) {
+    for (let i = 0; i < 40; i++) {
         let x = random(width);
         let y = random(height);
         let size = random(1, 3);
-        let brightness = random(150, 255);
+        let brightness = random(50, 255);
         fill(255, brightness);
         noStroke();
         ellipse(x, y, size);

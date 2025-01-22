@@ -171,4 +171,6 @@ img.rounded-circle {
 
   .btn{
     background-color: #fcf682;
+    text-align: center;
+    width: 100px;
   }
