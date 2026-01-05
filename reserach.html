@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-44KVKB4R38"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-44KVKB4R38');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://mozeyriver.com/heart.png" />
+    <meta property="og:image:width" content="500" />
+    <meta property="og:image:height" content="500" />
+    <meta property="og:title" content="Mozey River - Research" />
+    <meta property="og:description" content="Research" />
+
+    <title>Mozey River - Research</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        #p5-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        #p5-foreground {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        .content-wrapper {
+            max-width: 2000px;
+        }
+        .research-card {
+            background: rgba(0, 0, 0, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: left;
+        }
+        .research-link {
+            color: #fcf682;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .research-link:hover {
+            text-decoration: underline;
+        }
+        .pdf-frame {
+            width: 100%;
+            height: 800px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            background: rgba(0, 0, 0, 0.2);
+        }
+        .video-frame {
+            width: 100%;
+            height: 450px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            background: rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body style="overflow-y: auto; height:100%">
+    <div id="p5-background"></div>
+    <div id="p5-foreground"></div>
+
+    <div class="m-4 p-3 content-wrapper text-center mt-5">
+        <h1 class="m-4">Research</h1>
+        <div class="container p-2">
+            <div class="mb-4 research-card">
+                <h3 class="dl mb-3">Cross-Modal Learning in Music Visualizers</h3>
+                <embed class="pdf-frame" src="Cross-Modal%20Learning%20in%20Music%20Visualizers.pdf" type="application/pdf">
+                <div class="mt-4">
+                    <iframe
+                        class="video-frame"
+                        src="https://www.youtube.com/embed/Dc1UJKIGamc"
+                        title="Cross-Modal Learning in Music Visualizers"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+            </div>
+            <div class="mb-4 research-card">
+                <h3 class="dl mb-3">Embedded ML in the Context of Human Perception and Emotion</h3>
+                <embed class="pdf-frame" src="Embedded%20ML%20in%20the%20Context%20of%20Human%20Perception%20and%20Emotion.pdf" type="application/pdf">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="js/p5background.js"></script>
+</body>
+</html>
