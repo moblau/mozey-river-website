@@ -45,6 +45,32 @@
             border-radius: 8px;
             background: rgba(0, 0, 0, 0.2);
         }
+        .audio-section {
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .audio-section p {
+            color: rgba(255, 255, 255, 0.75);
+            font-size: 0.95rem;
+            margin-bottom: 1.25rem;
+        }
+        .audio-track {
+            margin-bottom: 1rem;
+        }
+        .audio-track label {
+            display: block;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.55);
+            margin-bottom: 0.3rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        .audio-track audio {
+            width: 100%;
+        }
     </style>
 </head>
 <body style="overflow-y: auto; height:100%">
@@ -57,6 +83,21 @@
             <a href="https://github.com/moblau/Quadraplex" target="_blank" rel="noopener">
                 <img class="rounded-lg bg-white thumbnail-image" src="github.png" alt="GitHub">
             </a>
+        </div>
+        <div class="container p-2 text-left audio-section">
+            <p>All synths in these tracks are made using Quadraplex.</p>
+            <div class="audio-track">
+                <label>Demo 1</label>
+                <audio controls>
+                    <source src="quadraplex demo1.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="audio-track">
+                <label>Demo 2</label>
+                <audio controls>
+                    <source src="quadraplex demo2.mp3" type="audio/mpeg">
+                </audio>
+            </div>
         </div>
         <div class="container p-2 text-left">
             <embed class="pdf-frame" src="Quadraplex%20Report.pdf" type="application/pdf">
